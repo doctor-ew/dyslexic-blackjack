@@ -1,0 +1,121 @@
+<!doctype html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>New Web Project</title>
+		<style>
+			ol#dealer {
+/*
+				background: tomato;
+				border: 1px solid #000;
+*/
+				margin-bottom: 10px;
+			}
+			ol#user {
+/*
+				background: green;
+				border: 1px solid #000;
+*/
+				margin-top: 10px;
+			}
+			ol {
+				display: block;
+				clear: both;
+				height: 96px;
+			}
+			ol li {
+				border: 1px solid #000;
+				float: left;
+				height: 96px;
+				list-style:none;
+				margin: 2px;
+				width: 71px;
+				background: url(tools/img/classic-playing-cards.png) no-repeat;
+			}
+			ol li *{
+				display: block;
+			}
+.club-ace {background-position: -1px -1px;}
+.club-2 {background-position: -74px-1px;}
+.club-3 {background-position: -147px -1px;}
+.club-4 {background-position: -220px -1px;}
+.club-5 {background-position: -293px -1px;}
+.club-6 {background-position: -366px -1px;}
+.club-7 {background-position: -439px -1px;}
+.club-8 {background-position: -512px -1px;}
+.club-9 {background-position: -585px -1px;}
+.club-10 {background-position: -658px -1px;}
+.club-jack {background-position: -731px -1px;}
+.club-queen {background-position: -804px -1px;}
+.club-king {background-position: -877px -1px;}
+.spade-ace {background-position: -1px -99px;}
+.spade-2 {background-position: -74px -99px;}
+.spade-3 {background-position: -147px -99px;}
+.spade-4 {background-position: -220px -99px;}
+.spade-5 {background-position: -293px -99px;}
+.spade-6 {background-position: -366px -99px;}
+.spade-7 {background-position: -439px -99px;}
+.spade-8 {background-position: -512px -99px;}
+.spade-9 {background-position: -585px -99px;}
+.spade-10 {background-position: -658px -99px;}
+.spade-jack {background-position: -731px -99px;}
+.spade-queen {background-position: -804px -99px;}
+.spade-king {background-position: -877px -99px;}
+.heart-ace {background-position: -1px -197px;}
+.heart-2 {background-position: -74px -197px;}
+.heart-3 {background-position: -147px -197px;}
+.heart-4 {background-position: -220px -197px;}
+.heart-5 {background-position: -293px -197px;}
+.heart-6 {background-position: -366px -197px;}
+.heart-7 {background-position: -439px -197px;}
+.heart-8 {background-position: -512px -197px;}
+.heart-9 {background-position: -585px -197px;}
+.heart-10 {background-position: -658px -197px;}
+.heart-jack {background-position: -731px -197px;}
+.heart-queen {background-position: -804px -197px;}
+.heart-king {background-position: -877px -197px;}
+.diamond-ace {background-position: -1px -295px;}
+.diamond-2 {background-position: -74px -295px;}
+.diamond-3 {background-position: -147px -295px;}
+.diamond-4 {background-position: -220px -295px;}
+.diamond-5 {background-position: -293px -295px;}
+.diamond-6 {background-position: -366px -295px;}
+.diamond-7 {background-position: -439px -295px;}
+.diamond-8 {background-position: -512px -295px;}
+.diamond-9 {background-position: -585px -295px;}
+.diamond-10 {background-position: -658px -295px;}
+.diamond-jack {background-position: -731px -295px;}
+.diamond-queen {background-position: -804px -295px;}
+.diamond-king {background-position: -877px -295px;}
+
+		</style>
+	</head>
+	<body>
+		<h1>Deck Test: </h1>
+		<ol id="dealer">
+		</ol>
+		<ol id="user">
+		</ol>
+		<div id="controls">
+			<a href="javascript:void(0)" class="hit">Hit</a>
+			<a href="javascript:void(0)" class="hold">Hold</a>
+		</div>
+		<p id="dealerTotal"><strong>Dealer:</strong> <em></em></p>
+		<p id="userTotal"><strong>User:</strong> <em></em></p>
+		<script language="JavaScript" type="text/javascript" src="tools/js/jquery.min.js">
+		</script>
+
+		<script language="JavaScript" type="text/javascript" src="Card.js"></script>
+		<script language="JavaScript" type="text/javascript" src="Deck.js"></script>
+		<script language="JavaScript" type="text/javascript" src="BlackJack.js"></script>
+		
+		<script language="JavaScript" type="text/javascript">
+			window.jQuery || document.write("<script src='tools/js/jquery.min.js'>\x3C/script>")
+			
+			$(document).ready(function(){
+				//				var c = new Card();
+				var hand = new BlackJack();
+			});
+			
+		</script>
+	</body>
+</html>
